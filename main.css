@@ -1,0 +1,172 @@
+body{
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+a i{
+    color: blue;
+    font-size: 1.2rem;
+}
+
+h1,h2,h3{
+    font-weight: 900;
+}
+
+h3,h5,h6{
+    font-weight: 700;
+}
+
+.section-heading{
+    text-align: center;
+}
+
+.section-heading::first-letter{
+  color: chartreuse;
+} 
+
+.bg-primary{
+    background-color: gold !important;
+}
+
+
+.text-primary{
+    color: tomato !important;
+}
+
+.btn-primary{
+    background-color: green !important;
+    border-color: hotpink !important;
+    color: lime !important;
+}
+
+.btn-primary:hover{
+    background-color: transparent !important;
+    border-color: red !important;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+
+}
+
+.navbar-brand , .navbar-link{
+    color: violet !important;
+
+}
+
+.about-us .section-heading{
+    text-align: right;
+}
+
+.pricing{
+    background-color: cadetblue !important;
+}
+
+.pricing .section-heading{
+    color: goldenrod;
+}
+
+.pricing .card{
+    border-radius: 0;
+    border-top: none;
+}
+.promote{
+    transform: scale(1.02);
+    z-index: 1;
+}
+
+.list-unstyled{
+    border-bottom: 1px solid crimson;
+}
+
+.single-service{
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+    transition: 0.5s;
+    padding: 30px 20px;
+    background-color:whitesmoke;
+}
+
+.single-service::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    transition: 0.5s;
+    width: 0;
+    height: 0;
+    background-color: blue;
+}
+
+.single-service::after{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: "";
+    transition: 0.5s;
+    width: 0;
+    height: 0;
+    background-color: greenyellow;
+}
+
+.single-service:hover::after,
+.single-service:hover::before
+{
+width: 50%;
+height: 5px;
+}
+
+.single-service i{
+    font-size: 1.2rem;
+    width: 60px;
+    height: 60px;
+    border: greenyellow 1px solid;
+    line-height: 60px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+
+.single-service:hover i{
+  background-color: indigo;
+  color: chartreuse;
+  border-color: darkorange;
+}
+
+.single-service h4{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.team .card-img-top{
+    height: 300px;
+    object-fit: cover;
+}
+
+.team .card{
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.team .card-body{
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    background-color: crimson;
+    transition: 0.5s;
+    color: darkgoldenrod;
+}
+
+.team .card:hover>.card-body{
+    bottom: 0%;
+
+}
+
+.call-to-action{
+    background-color: black;
+    color: cornflowerblue;
+}
